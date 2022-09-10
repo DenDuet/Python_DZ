@@ -49,5 +49,5 @@ def dvoichnoe_digit(num) -> int:
 
             
 number = get_number("Введите целое число: ")
-# print(number)
+
 dvoichnoe_digit(number)
