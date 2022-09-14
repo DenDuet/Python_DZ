@@ -25,10 +25,12 @@ def dvoichnoe_digit(num) -> int:
     number=num
     count=0
     if num<0:
-        znak = '-0b'
+        znak = '-b'
         num=num*(-1)
     else:
-        znak = '0b'
+        znak = 'b'
+    if num==0:
+        dva_digit='0'
     
     while num>0:
         if num%2 == 0:
@@ -39,7 +41,7 @@ def dvoichnoe_digit(num) -> int:
         count+=1
         if count%4==0:
             dva_digit=dva_digit+' '
-    print(count)
+    # print(count)
     if count%4 !=0:
         for i in range(4-count%4):
             dva_digit=dva_digit+'0'

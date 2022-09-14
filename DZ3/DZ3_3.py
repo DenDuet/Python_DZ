@@ -38,7 +38,7 @@ def list_transform(spisok) -> int:
     spisok_prom = []
     for i in spisok:
         spisok_prom.append(round((i-int(i))*100))
-    # print(spisok_prom)   
+    print(spisok_prom)   
     return max(spisok_prom), min(spisok_prom) 
 
 
