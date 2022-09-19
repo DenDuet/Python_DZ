@@ -18,7 +18,7 @@ def get_first_move():
     '''
     first_move = randint(0,1)
     if first_move == 0:
-        print("Первым ходете Вы!")
+        print("Первым ходите Вы!")
     else:
         print("Первым хожу я!")
     return first_move
@@ -82,7 +82,7 @@ def game(first_move, sweets, sweet_per_time):
             print(f'Ваших ходов: {mv_0}, моих ходов: {mv_1}, осталось конфет {sweets}')
     
 sweets = mf.get_number("Введите общее количество конфет: ")
-sweets_per_time = mf.get_number("Введите максимальное (минимум = 1) количество конфет, которые можно взять за один раз, но не больше 1/3 от общего числа: ",0,int(sweets/3))
+sweets_per_time = mf.get_number("Введите максимальное (минимум = 1) количество конфет, которые можно взять за один раз, но не больше 1/3 от общего числа: ",1,int(sweets/3))
 print("Определяем чей первый ход: ")
 first_move = get_first_move()
 game(first_move, sweets, sweets_per_time)
